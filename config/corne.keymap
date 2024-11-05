@@ -11,7 +11,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Scape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -62,3 +69,4 @@
         };
     };
 };
+
