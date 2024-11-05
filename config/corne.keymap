@@ -48,18 +48,17 @@
 &trans  &kp F1    &kp F2   &kp F3  &kp F4  &kp F5    &kp F6         &kp F7        &kp F8         &kp F9  &kp F10     &trans
 &trans  &kp F11   &kp F12  &trans  &trans  &trans    &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &trans  &bt BT_CLR  &trans
 &trans  &kp CAPS  &trans   &trans  &trans  &trans    &trans         &trans        &bt BT_DISC 2  &trans  &tog 0      &kp PRINTSCREEN
-                           &trans  &trans  &to 4     &kp BACKSPACE  &trans        &trans
+                           &trans  &trans  &mo 4     &kp BACKSPACE  &trans        &trans
             >;
         };
 
         number_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans       &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS     &kp KP_PLUS  &trans
-                        &trans  &trans  &trans    &trans        &kp KP_NUMBER_0  &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans       &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS     &kp KP_PLUS  &trans
+                        &trans  &trans  &trans    &trans           &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
     };
 };
-
