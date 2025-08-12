@@ -54,10 +54,10 @@
 
         function_layer {
             bindings = <
-&to 0   &kp F1    &kp F2   &kp F3            &kp F4             &kp F5               &kp F6            &kp F7          &kp F8         &kp F9  &kp F10     &trans
-&to 5   &kp F11   &kp F12  &trans            &trans             &trans               &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2   &trans  &bt BT_CLR  &trans
-&trans  &kp CAPS  &trans   &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG    &ext_power EP_ON  &rgb_ug RGB_ON  &bt BT_DISC 2  &trans  &tog 0      &kp PRINTSCREEN
-                           &trans            &trans             &mo 4                &kp BACKSPACE     &trans          &trans
+&to 0           &kp F1    &kp F2   &kp F3            &kp F4             &kp F5               &kp F6            &kp F7          &kp F8         &kp F9  &kp F10     &trans
+&to 5           &kp F11   &kp F12  &trans            &trans             &trans               &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2   &trans  &bt BT_CLR  &trans
+&kp LA(INSERT)  &kp CAPS  &trans   &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG    &ext_power EP_ON  &rgb_ug RGB_ON  &bt BT_DISC 2  &trans  &tog 0      &kp PRINTSCREEN
+                                   &trans            &trans             &mo 4                &kp BACKSPACE     &trans          &trans
             >;
         };
 
