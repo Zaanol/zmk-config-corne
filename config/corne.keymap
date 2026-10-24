@@ -137,8 +137,7 @@
         };
 
         number_layer {
-            display-name = "Num";curl: (22) The requested URL returned error: 400
-                                 failed: recurring:R017 — recurring transaction creation request failed: REQ-400: Request validation failed
+            display-name = "Num";
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans        &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans       &kp BACKSPACE
