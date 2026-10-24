@@ -34,36 +34,6 @@
         };
     };
 
-    macros {
-        git_stash: git_stash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&macro_press &kp LSHIFT &kp LGUI>
-                     , <&macro_tap &kp A>
-                     , <&macro_release &kp LSHIFT &kp LGUI>
-                     , <&macro_wait_time 300>
-                     , <&kp S &kp T &kp A &kp S &kp H>
-                     , <&macro_wait_time 300>
-                     , <&kp ENTER>;
-        };
-
-        git_unstash: git_unstash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&macro_press &kp LSHIFT &kp LGUI>
-                     , <&macro_tap &kp A>
-                     , <&macro_release &kp LSHIFT &kp LGUI>
-                     , <&macro_wait_time 300>
-                     , <&kp U &kp N &kp S &kp T &kp A &kp S &kp H>
-                     , <&macro_wait_time 300>
-                     , <&kp ENTER>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -159,7 +129,7 @@
             display-name = "Git";
 
             bindings = <
-&kp LC(V)       &git_stash    &git_unstash  &kp LG(T)       &kp LG(K)          &kp LS(LG(K))     &kp LA(LG(Z))  &kp LS(LA(C))  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp LA(F12)  &to MAC_BASE
+&kp LC(V)       &kp LS(LG(A)) &kp LS(LG(A)) &kp LG(T)       &kp LG(K)          &kp LS(LG(K))     &kp LA(LG(Z))  &kp LS(LA(C))  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp LA(F12)  &to MAC_BASE
 &kp LS(LG(A))   &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET) &kp LG(NUMBER_4) &kp LG(NUMBER_5) &kp LG(FSLH)    &kp LG(B)      &kp LA(ENTER)  &trans           &trans            &trans        &to MAC_BASE
 &to MAC_BASE     &trans        &trans        &trans          &trans             &trans             &trans         &trans         &trans           &trans            &trans        &to MAC_BASE
                                          &trans          &trans             &trans         &trans           &trans         &trans
